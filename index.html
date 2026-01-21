@@ -107,10 +107,13 @@
         .hero {
             background: linear-gradient(135deg, var(--color-menta) 0%, var(--color-coral) 50%, var(--color-durazno) 100%);
             color: white;
-            padding: 6rem 2rem;
+            padding: 8rem 2rem;
             text-align: center;
             position: relative;
             overflow: hidden;
+            max-width: 100%;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
         }
 
         .hero::before {
@@ -130,18 +133,20 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            letter-spacing: 1px;
         }
 
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            max-width: 800px;
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            line-height: 1.8;
         }
 
         .cta-button {
