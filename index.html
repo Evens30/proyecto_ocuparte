@@ -649,6 +649,22 @@
             }
         }
 
+        /* Mapa */
+        .map-container {
+            margin: 2.5rem auto;
+            max-width: 800px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            display: block;
+        }
+
         /* Formulario de Consulta */
         .form-container {
             background: rgba(255, 255, 255, 0.15);
@@ -941,6 +957,16 @@
                 Lunes a Viernes: 08:00 - 20:00 hs<br>
                 Sábados: 08:00 - 13:00 hs
             </div>
+        </div>
+
+        <!-- Mapa de Google Maps -->
+        <div class="map-container">
+            <iframe
+                src="https://maps.google.com/maps?q=José+León+Suárez+2277,+Mataderos,+Buenos+Aires,+Argentina&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
 
         <!-- Formulario de Consulta -->
