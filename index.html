@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCUPARTE - Equipo Terapéutico</title>
+    <title>OCUPARTE - Equipo Terapéutico | Terapia Ocupacional, Psicología y Psicopedagogía</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="OCUPARTE es un equipo terapéutico especializado en desarrollo infantil. Ofrecemos Terapia Ocupacional con Integración Sensorial, Psicología TCC y Psicopedagogía. Atendemos obras sociales, prepagas y particulares.">
+    <meta name="keywords" content="terapia ocupacional, psicología infantil, psicopedagogía, integración sensorial, desarrollo infantil, TCC, Buenos Aires">
+    <meta name="author" content="OCUPARTE Equipo Terapéutico">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OCUPARTE - Equipo Terapéutico">
+    <meta property="og:description" content="Equipo especializado en desarrollo infantil: Terapia Ocupacional, Psicología y Psicopedagogía. Acompañamos a cada persona potenciando sus capacidades.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:locale" content="es_AR">
+
+    <!-- Google Fonts - Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
         :root {
             /* Colores del logo */
@@ -13,6 +32,8 @@
             
             /* Colores complementarios */
             --color-menta-oscuro: #7DB599;
+            --color-menta-medio: #8CC9A1;
+            --color-menta-claro: #C5E8D2;
             --color-coral-oscuro: #E88B76;
             --color-fondo-claro: #FAF9F6;
             --color-fondo-blanco: #FFFFFF;
@@ -33,7 +54,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: var(--color-texto-primario);
             background-color: var(--color-fondo-claro);
@@ -333,6 +354,77 @@
             margin-bottom: 0.5rem;
         }
 
+        /* Cuando Consultar Section */
+        .cuando-consultar-section {
+            margin-top: 4rem;
+            padding: 2.5rem 3rem;
+            background: linear-gradient(135deg, var(--color-menta-claro) 0%, #E8F5E9 100%);
+            border-radius: 20px;
+            text-align: center;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .cuando-consultar-section h3 {
+            color: var(--color-menta-oscuro);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cuando-intro {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .cuando-lista {
+            text-align: left;
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cuando-lista li {
+            padding: 0.6rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        .cuando-lista li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-menta-medio);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .cuando-consultar-section {
+                padding: 2rem 1.5rem;
+                margin-top: 3rem;
+            }
+
+            .cuando-consultar-section h3 {
+                font-size: 1.5rem;
+            }
+
+            .cuando-intro {
+                font-size: 1rem;
+            }
+
+            .cuando-lista li {
+                font-size: 1rem;
+            }
+        }
+
         /* Team Section */
         .team-grid {
             display: grid;
@@ -451,6 +543,83 @@
         .obra-badge:hover {
             transform: scale(1.05);
             box-shadow: var(--sombra-media);
+        }
+
+        /* Más Opciones Card */
+        .mas-opciones-card {
+            margin-top: 3rem;
+            padding: 2rem 2.5rem;
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFF3E0 100%);
+            border-radius: 20px;
+            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 2px solid var(--color-durazno);
+        }
+
+        .mas-opciones-card h3 {
+            color: var(--color-coral);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .opciones-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .opcion-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-align: left;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .opcion-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .opcion-item strong {
+            color: var(--color-menta-oscuro);
+        }
+
+        .opciones-cta {
+            display: inline-block;
+            background: var(--color-coral);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .opciones-cta:hover {
+            background: var(--color-menta-oscuro);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .mas-opciones-card {
+                padding: 1.5rem;
+                margin-top: 2rem;
+            }
+
+            .mas-opciones-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .opcion-item {
+                font-size: 1rem;
+            }
         }
 
         /* Contact Section */
@@ -905,10 +1074,6 @@
                     <li>Acompañamiento en la autorregulación emocional</li>
                     <li>Optimización del procesamiento e integración sensorial</li>
                 </ul>
-                <div class="cuando-consultar">
-                    <strong>¿Cuándo consultar?</strong>
-                    <p>Cuando se presentan desafíos en el desarrollo psicomotor (correr, saltar, escribir, recortar) que impacten negativamente en el desempeño ocupacional.</p>
-                </div>
             </div>
 
             <!-- Psicología TCC -->
@@ -918,8 +1083,8 @@
                 <p>La Terapia Cognitivo-Conductual ayuda a identificar y cambiar patrones de pensamiento y conducta para lograr mayor bienestar emocional.</p>
                 <ul>
                     <li>Superar la ansiedad, miedos y preocupaciones</li>
-                    <li>Combatir la depresión infantil</li>
-                    <li>Manejar conductas disruptivas y rabietas</li>
+                    <li>Combatir la depresión</li>
+                    <li>Manejar conductas disruptivas</li>
                     <li>Fortalecer la autoestima y confianza</li>
                     <li>Tratar TOC (obsesiones y compulsiones)</li>
                     <li>Adaptarse a cambios importantes en la vida</li>
@@ -940,6 +1105,20 @@
                     <li>Estrategias de estudio personalizadas</li>
                 </ul>
             </div>
+        </div>
+
+        <!-- Cuándo Consultar -->
+        <div class="cuando-consultar-section">
+            <h3>¿Cuándo consultar?</h3>
+            <p class="cuando-intro">Podés consultar si tu niño presenta dificultades para participar plenamente en sus actividades cotidianas, por ejemplo si:</p>
+            <ul class="cuando-lista">
+                <li>Tiene selectividad alimentaria</li>
+                <li>Le cuesta permanecer sentado o se mueve constantemente</li>
+                <li>Presenta desafíos en la escritura o en el uso de utensilios</li>
+                <li>Tiene dificultades para sostener la atención</li>
+                <li>Le cuesta relacionarse y jugar con otros niños</li>
+                <li>Necesita mucha ayuda en actividades de la vida diaria como vestirse o comer</li>
+            </ul>
         </div>
     </section>
 
@@ -1018,6 +1197,22 @@
             <div class="obra-badge">MEDICUS</div>
             <div class="obra-badge">GALENO</div>
             <div class="obra-badge">Unión Personal</div>
+        </div>
+
+        <!-- Card Más Opciones -->
+        <div class="mas-opciones-card">
+            <h3>Más opciones para vos</h3>
+            <div class="opciones-lista">
+                <div class="opcion-item">
+                    <span class="opcion-icon">👤</span>
+                    <span>Atendemos <strong>particulares</strong></span>
+                </div>
+                <div class="opcion-item">
+                    <span class="opcion-icon">📋</span>
+                    <span>¿Tu obra social no está en la lista? <strong>Consultanos</strong>, trabajamos con más coberturas</span>
+                </div>
+            </div>
+            <a href="#contacto" class="opciones-cta">Consultanos</a>
         </div>
     </section>
 
