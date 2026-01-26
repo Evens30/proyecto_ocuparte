@@ -53,6 +53,12 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
+
         body {
             font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -1160,56 +1166,103 @@
 
             /* Contact Section */
             .contact-section {
-                padding: 2.5rem 1rem;
-                border-radius: 20px;
-                margin: 2rem 1rem;
+                padding: 2rem 0.8rem;
+                border-radius: 15px;
+                margin: 1.5rem 0.5rem;
+                overflow-x: hidden;
+                width: calc(100% - 1rem);
+                box-sizing: border-box;
+            }
+
+            .contact-section p {
+                font-size: 1rem !important;
+                padding: 0 0.5rem;
+            }
+
+            .contact-info {
+                gap: 1rem;
+                padding: 0 0.5rem;
             }
 
             .contact-item {
-                padding: 1rem 1.2rem;
+                padding: 1rem;
                 min-width: auto;
                 width: 100%;
+                box-sizing: border-box;
             }
 
             .contact-item strong {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
 
             /* Ubicación */
             .location-section {
-                gap: 1.5rem;
-                margin: 2rem auto;
+                display: block !important;
+                grid-template-columns: 1fr !important;
+                gap: 1rem;
+                margin: 1.5rem auto;
+                padding: 0 0.5rem;
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
             }
 
             .location-info {
-                padding: 1.5rem;
-                border-radius: 15px;
+                padding: 1.2rem;
+                border-radius: 12px;
+                margin-bottom: 1rem;
+                width: 100%;
+                box-sizing: border-box;
             }
 
             .location-info h3 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
+                flex-wrap: wrap;
+            }
+
+            .location-info h3 span {
+                font-size: 1.5rem;
+            }
+
+            .location-details {
+                margin-bottom: 1rem;
             }
 
             .location-details .address {
-                font-size: 1.1rem;
-            }
-
-            .location-details p {
                 font-size: 1rem;
             }
 
-            .btn-directions {
-                padding: 0.8rem 1.5rem;
+            .location-details p {
                 font-size: 0.95rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .location-details .reference {
+                font-size: 0.85rem;
+            }
+
+            .btn-directions {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.9rem;
+                width: 100%;
+                justify-content: center;
             }
 
             .map-container {
-                min-height: 250px;
-                border-radius: 15px;
+                min-height: 220px;
+                height: 220px;
+                border-radius: 12px;
+                width: 100%;
+                max-width: 100%;
+                overflow: hidden;
+                box-sizing: border-box;
             }
 
             .map-container iframe {
-                min-height: 250px;
+                min-height: 220px;
+                height: 220px;
+                width: 100% !important;
+                max-width: 100% !important;
             }
 
             /* Formulario */
