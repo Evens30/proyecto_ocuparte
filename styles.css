@@ -69,8 +69,8 @@ nav {
 }
 
 .logo-image {
-    height: 120px;
-    width: auto;
+    height: auto;
+    width: 250px;
     object-fit: contain;
     display: block;
 }
