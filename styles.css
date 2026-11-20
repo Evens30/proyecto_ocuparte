@@ -378,24 +378,7 @@ h2::after {
     font-size: 1.1rem;
 }
 
-/* Teléfono: texto en desktop, link en móvil */
-.phone-desktop {
-    display: inline;
-}
-.phone-mobile {
-    display: none;
-    color: inherit;
-    text-decoration: none;
-}
-
 @media (max-width: 768px) {
-    .phone-desktop {
-        display: none;
-    }
-    .phone-mobile {
-        display: inline;
-    }
-
     .cuando-consultar-section {
         padding: 2rem 1.5rem;
         margin-top: 3rem;
